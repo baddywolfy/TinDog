@@ -7,13 +7,13 @@ body {
 
 #title {
   background-color: #ff4c68;
-  height: 85vh;
-  overflow: hidden;
+  /*height: 82vh;*/
+  /*overflow: hidden;*/
 
 }
 
 .container-fluid {
-  padding: 3% 15%;
+  padding: 3% 15% 9%;
 }
 
 h1 {
@@ -61,12 +61,18 @@ h2 {
 
 /* Title */
 
-.tittle-image {
+.title-image {
+  width: 60%;
   transform: rotate(25deg);
+  position: absolute;
+  top: -6%;
+  right: 30%;
 }
 
 #features {
   padding: 7% 15%;
+  background-color: #fff;
+  position: relative;
 }
 
 .feature-box  {
@@ -108,4 +114,28 @@ h2 {
 .press-logo {
   width: 15%;
   margin: 20px 20px 50px;
+}
+
+/*Pricing Section*/
+
+#pricing {
+  padding: 150px;
+  text-align: center;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+@media (max-width: 1028px) {
+  #title {
+    text-align: center;
+  }
+
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+
 }
